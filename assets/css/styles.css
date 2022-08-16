@@ -3,21 +3,55 @@
 :root{
     --mb-1: 7.5rem;
     --body-font: 'Montserrat', sans-serif;
-    --big-font-size: 10.25rem;
+    --big-font-size: 12.25rem;
+    --small-font-size: 4rem;
+    --left1: 400px;
+    --left2: 110px;
+    --smallest-font-size: 1rem;
 }
 body{
     background-image: url("/assets/img/1048232144.jpg.0.jpg");
  
   background-size: cover;
 }
+@media screen and (max-width: 1100px){
+    .body{
+        display: block;
+    }
+    :root{
+        display: block;
+        --big-font-size: 9.5rem;
+        --small-font-size: 3rem;
+    --smallest-font-size: .8rem;
+    --left2: 200px;
+    --left1: 200px;
+    }
+    .degree{
+        
+        top: 200px;
+      
+    }
+    .state{
+      
+        top: 380px;
+      
 
+    }
+    .details{
+        
+        top: 440px;
+      
+    }
+}
 .degree{
     position: absolute;
     font-size: var(--big-font-size);
     font-family: 'Rubik', sans-serif;
     color: aliceblue;
-    left: 150px;
-    bottom: 10px;
+    left: var(--left2);
+    bottom: 130px;
+    margin: 0;
+    padding: 0;
     
 }
 .container{
@@ -28,6 +62,24 @@ body{
     width: 35vw;
     top: 0px;
     right: 0px;
-    background: rgba(16, 13, 32, 0.5);
+    background: rgba(16, 13, 32, 0.8);
   
+}
+.state{
+    position: absolute;
+    color: white;
+    bottom: 240px;
+    left: var(--left1);
+    font-size: var(--small-font-size);
+    margin: 0;
+    padding: 0;
+}
+.details{
+    position: absolute;
+    color: rgb(233, 233, 233);
+    bottom: 220px;
+    left: var(--left1);
+    font-size: var(--smallest-font-size);
+    margin: 0;
+    padding: 0;
 }
