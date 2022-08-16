@@ -1,5 +1,33 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital@0;1&family=Rubik&display=swap');
+
+:root{
+    --mb-1: 7.5rem;
+    --body-font: 'Montserrat', sans-serif;
+    --big-font-size: 10.25rem;
+}
 body{
-    background-image: url("/weather-app/assets/img/1048232144.jpg.0.jpg");
+    background-image: url("/assets/img/1048232144.jpg.0.jpg");
  
   background-size: cover;
+}
+
+.degree{
+    position: absolute;
+    font-size: var(--big-font-size);
+    font-family: 'Rubik', sans-serif;
+    color: aliceblue;
+    left: 150px;
+    bottom: 10px;
+    
+}
+.container{
+    position: absolute;
+    border-style: solid;
+    border-width: 0px;
+    height: 100vh;
+    width: 35vw;
+    top: 0px;
+    right: 0px;
+    background: rgba(16, 13, 32, 0.6);
+  
 }
