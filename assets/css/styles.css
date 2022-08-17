@@ -5,8 +5,8 @@
     --body-font: 'Montserrat', sans-serif;
     --big-font-size: 12.25rem;
     --small-font-size: 4rem;
-    --left1: 400px;
-    --left2: 110px;
+    --left1: 380px;
+    --left2: 90px;
     --smallest-font-size: 1rem;
 }
 body{
@@ -15,16 +15,14 @@ body{
   background-size: cover;
 }
 @media screen and (max-width: 1100px){
-    .body{
-        display: block;
-    }
+   
     :root{
         display: block;
         --big-font-size: 9.5rem;
         --small-font-size: 3rem;
     --smallest-font-size: .8rem;
-    --left2: 200px;
-    --left1: 200px;
+    --left2: 25%;
+    --left1: 25%;
     }
     .degree{
         
