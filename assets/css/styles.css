@@ -3,7 +3,7 @@
 :root{
     --mb-1: 7.5rem;
     --body-font: 'Montserrat', sans-serif;
-    --big-font-size: 10.25rem;
+    --big-font-size: 10.5rem;
 }
 body{
     background-image: url("/assets/img/1048232144.jpg.0.jpg");
@@ -30,4 +30,30 @@ body{
     right: 0px;
     background: rgba(16, 13, 32, 0.6);
   
+}
+.london{
+    position: absolute;
+    color: aliceblue;
+    left: 380px;
+    bottom: 155px;
+    font-size: 2.8rem;
+    font-family: 'Rubik', sans-serif;
+}
+.date-time{
+    position: absolute;
+    color: aliceblue;
+    left: 380px;
+    bottom: 165px;
+    font-family: 'Rubik', sans-serif;
+    font-weight: 700;
+}
+#container-item{
+    font-family: sans-serif;
+    font-weight: 500;
+    color: rgb(143, 144, 145);
+}
+.cloud{
+    position: absolute;
+    left: 570px;
+    bottom: 210px;
 }

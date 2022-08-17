@@ -9,25 +9,27 @@
 </head>
 <body>
 
-    <box-icon name='google-cloud' type='logo' animation='tada' color='#f9f6f6' ></box-icon>
-    <box-icon name='search'></box-icon>
+    <box-icon name='cloud-lightning' animation='tada' color='#fbf5f5' class="cloud"></box-icon>
 
-  <h2 class="degree">16°</h2>
-    <h3>London</h3>
-    <div class="container"></div>
-
+  <h2 class="degree">16°</h2><span><h3 class="london">London</h3></span>
  
     <script src="https://unpkg.com/boxicons@2.1.2/dist/boxicons.js"></script>
     <script src="assets/js/app.js"></script>
    
     <!--===== CONTAINER LOCATION =====-->
-
-    <section class="container__list" id="container-item">
-        <span class="container__location">Birmingham<br></span>
-        <span class="container__location">Manchester<br></span>
-        <span class="container__location">New York<br></span>
-        <span class="container__location">Califonia<br></span>
+    <div class="container"></div>
+    <section class="container" id="container-item">
+        <span class="container__location">Birmingham<br><br></span>
+        <span class="container__location">Manchester<br><br></span>
+        <span class="container__location">New York<br><br></span>
+        <span class="container__location">Califonia<br><br></span>
            
+    <box-icon class="container__item" name='search'></box-icon>
       </section>
+
+      <!--===== DATE AND TIME =====-->
+      <p class="date-time">06:09-Monday,13 Aug'22 <span id="datetime"></span></p>
+
+    
 </body>
 </html> 
