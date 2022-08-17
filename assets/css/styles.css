@@ -3,15 +3,12 @@
 :root{
     --mb-1: 7.5rem;
     --body-font: 'Montserrat', sans-serif;
-<<<<<<< HEAD
     --big-font-size: 10.5rem;
-=======
     --big-font-size: 12.25rem;
     --small-font-size: 4rem;
     --left1: 400px;
     --left2: 110px;
     --smallest-font-size: 1rem;
->>>>>>> 713d7b298e990ec8f321fa87131855a443687953
 }
 body{
     background-image: url("/assets/img/1048232144.jpg.0.jpg");
@@ -23,9 +20,9 @@ body{
         display: block;
     }
     :root{
-        display: block;
-        --big-font-size: 9.5rem;
-        --small-font-size: 3rem;
+     display: block;
+    --big-font-size: 9.5rem;
+    --small-font-size: 3rem;
     --smallest-font-size: .8rem;
     --left2: 200px;
     --left1: 200px;
@@ -67,36 +64,50 @@ body{
     top: 0px;
     right: 0px;
     background: rgba(16, 13, 32, 0.8);
-  
 }
-<<<<<<< HEAD
-.london{
+.flex-item1{
+    background-color: rgb(60, 64, 67);
+    background-repeat: repeat;
+    background-attachment: scroll;
+    background-origin: padding-box;
+    background-clip: border-box;
+    height: 1.5px;
+    width: 65%;
+    bottom: 560px;
     position: absolute;
-    color: aliceblue;
-    left: 380px;
-    bottom: 155px;
-    font-size: 2.8rem;
-    font-family: 'Rubik', sans-serif;
+    margin-left: 7px;
+    left: 50px;
 }
-.date-time{
+.container__list{
+    color: rgb(166, 171, 175);
+    padding-left: 60px;
+    padding-top: 140px;
+}
+.flex-item2{
+    background-color: rgb(60, 64, 67);
+    background-repeat: repeat;
+    background-attachment: scroll;
+    background-origin: padding-box;
+    background-clip: border-box;
+    height: 1.5px;
+    width: 75%;
+    bottom: 300px;
     position: absolute;
-    color: aliceblue;
-    left: 380px;
-    bottom: 165px;
-    font-family: 'Rubik', sans-serif;
-    font-weight: 700;
+    right: 60px;
 }
-#container-item{
-    font-family: sans-serif;
-    font-weight: 500;
-    color: rgb(143, 144, 145);
+.weather{
+    color: rgb(166, 171, 175);
+    padding-left: 0px;
+    padding-top: 0px;
+    padding-bottom: 20px;
 }
-.cloud{
-    position: absolute;
-    left: 570px;
-    bottom: 210px;
+#weather-detail{
+    padding-left: 0px;
+    padding-top: 30px;
 }
-=======
+.flex-item3{
+
+}
 .state{
     position: absolute;
     color: white;
@@ -115,4 +126,3 @@ body{
     margin: 0;
     padding: 0;
 }
->>>>>>> 713d7b298e990ec8f321fa87131855a443687953
