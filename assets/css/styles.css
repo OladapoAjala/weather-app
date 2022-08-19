@@ -9,6 +9,12 @@
     --left1: 380px;
     --left2: 90px;
     --smallest-font-size: 1rem;
+    --height: 100vh;
+    --width:  35vw;
+    --container-top: 0px;
+    --search-box-width: 80px;
+    --search-box-height: 93px;
+    --small-font-color: white;
 }
 body{
     background-image: url("/assets/img/1048232144.jpg.0.jpg");
@@ -22,31 +28,70 @@ body{
     --big-font-size: 9.5rem;
     --small-font-size: 3rem;
     --smallest-font-size: .8rem;
-    --left2: 25%;
-    --left1: 25%;
+    --left2: 40%;
+    --left1: 40%;
+    --height: 60.7vh;
+    --width:  100vw;
+    --container-top: 380px;
+    --search-box-width: 100px;
+    --small-font-color: rgb(230, 231, 235);
     }
     .degree{
         
-        top: 200px;
+        top: 120px;
       
     }
     .state{
       
-        top: 380px;
+        top: 280px;
       
 
     }
     .details{
         
-        top: 440px;
+        top: 340px;
       
     }
+    .container{
+        position: absolute;
+        height: 50vh;
+        width: 100vw;
+    }
+}
+@media screen and (max-width: 550px){
+    :root{
+        display: block;
+       --big-font-size: 9.5rem;
+       --small-font-size: 3rem;
+       --smallest-font-size: .8rem;
+       --left2: 30%;
+       --left1: 30%;
+       --height: 60.7vh;
+       --width:  100vw;
+       --container-top: 380px;
+       --search-box-width: 100px;
+       --small-font-color: rgb(230, 231, 235);
+    }
+    .degree{
+        top: 70px;
+    }
+    .state{
+        top: 220px;
+    }
+    .details{
+        top: 280px;
+    }
+.container{
+    position: absolute;
+    height: 60vh;
+    width: 100vw;
+}
 }
 .degree{
     position: absolute;
     font-size: var(--big-font-size);
     font-family: 'Rubik', sans-serif;
-    color: aliceblue;
+    color: var(--small-font-color);
     left: var(--left2);
     bottom: 130px;
     margin: 0;
@@ -57,9 +102,9 @@ body{
     position: absolute;
     border-style: solid;
     border-width: 0px;
-    height: 100vh;
-    width: 35vw;
-    top: 0px;
+    height: var(--height);
+    width: var(--width);
+    top: var(--container-top);
     right: 0px;
     background: rgba(16, 13, 32, 0.8);
 }
@@ -81,8 +126,13 @@ body{
     color: rgb(110, 112, 114);
     left: 57px;
     top: 129px;
-   
     
+}
+.container__location{
+    cursor: pointer;
+}
+.container__location:hover{
+    color: rgb(231, 221, 221);
 }
 
 .flex-item2{
@@ -112,7 +162,7 @@ body{
 }
 .state{
     position: absolute;
-    color: white;
+    color: var(--small-font-color);
     bottom: 240px;
     left: var(--left1);
     font-size: var(--small-font-size);
@@ -121,7 +171,7 @@ body{
 }
 .details{
     position: absolute;
-    color: rgb(233, 233, 233);
+    color: var(--small-font-color);
     bottom: 220px;
     left: var(--left1);
     font-size: var(--smallest-font-size);
@@ -134,8 +184,8 @@ body{
     border-style: solid;
     right: 0px;
     border-width: 0px;
-    height: 93px;
-    width: 80px;
+    height: var(--search-box-height);
+    width: var(--search-box-width);
     background: rgb(140, 140, 190);
     text-align: center;
 }
@@ -144,5 +194,5 @@ body{
     top:35px;
     left: 30px;
     text-align: center;
-    
+    cursor: pointer;
 }
