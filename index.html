@@ -12,9 +12,6 @@
   <!--===== ICONS =====-->
     <box-icon name='cloud-lightning' animation='tada' color='#fbf5f5' class="cloud"></box-icon>
 
-    <box-icon name='google-cloud' type='logo' animation='tada' color='#f9f6f6' ></box-icon>
-    <box-icon name='search'></box-icon>
-
 
   <h2 class="degree">16°</h2>
     <h3 class="state">London</h3>
@@ -25,6 +22,10 @@
    
     <!--===== CONTAINER LOCATION =====-->
     <div class="container">
+      <div class="search-box">
+        <box-icon name='search' class="search"></box-icon>
+      </div>
+      
       <div class="flex-item1"></div>
         <section class="container__list" id="container-item">
           <span class="container__location">Birmingham<br><br></span>
@@ -33,14 +34,19 @@
           <span class="container__location">Califonia<br><br></span>
         </section>
         <br><div class="flex-item2">
+          <h4 class="weather">Weather Details</h4>
        <section class="container__list" id="weather-detail">
-        <h4 class="weather">Weather Details</h4>
+        
             <span class="weather__detail">Cloudy<br><br></span>
             <span class="weather__detail">Humidity<br><br></span>
             <span class="weather__detail">Wind<br><br></span>
           </section>
         </div>
-        <box-icon class="container__item" name='search'></box-icon>
+
+
+<!--===== Search Box =====-->
+
       </div>
+      <script src="https://unpkg.com/boxicons@2.1.2/dist/boxicons.js"></script>
   </body>
   </html> 

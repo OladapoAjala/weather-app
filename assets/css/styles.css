@@ -71,42 +71,46 @@ body{
     background-attachment: scroll;
     background-origin: padding-box;
     background-clip: border-box;
-    height: 1.5px;
-    width: 65%;
-    bottom: 560px;
+    height: 1px;
+    width: 61%;
+    top: 93px;
     position: absolute;
     margin-left: 7px;
     left: 50px;
 }
 .container__list{
-    color: rgb(166, 171, 175);
-    padding-left: 60px;
-    padding-top: 140px;
+    position: absolute;
+    color: rgb(110, 112, 114);
+    left: 57px;
+    top: 129px;
+   
+    
 }
+
 .flex-item2{
     background-color: rgb(60, 64, 67);
     background-repeat: repeat;
     background-attachment: scroll;
     background-origin: padding-box;
     background-clip: border-box;
-    height: 1.5px;
+    height: 1px;
     width: 75%;
-    bottom: 300px;
+    left: 57px;
+    top: 318px;
     position: absolute;
     right: 60px;
 }
 .weather{
-    color: rgb(166, 171, 175);
-    padding-left: 0px;
-    padding-top: 0px;
-    padding-bottom: 20px;
+    position: absolute;
+    color: rgb(192, 197, 201);
+    top: 15px;
+    left: 1px;
 }
-#weather-detail{
-    padding-left: 0px;
-    padding-top: 30px;
-}
-.flex-item3{
 
+.weather__detail{
+    position: relative;
+    top: -10px;
+    left: -56px;
 }
 .state{
     position: absolute;
@@ -125,4 +129,22 @@ body{
     font-size: var(--smallest-font-size);
     margin: 0;
     padding: 0;
+}
+
+.search-box{
+    position: absolute;
+    border-style: solid;
+    right: 0px;
+    border-width: 0px;
+    height: 93px;
+    width: 80px;
+    background: rgb(140, 140, 190);
+    text-align: center;
+}
+.search{
+    position: absolute;
+    top:35px;
+    left: 30px;
+    text-align: center;
+    
 }
