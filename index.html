@@ -23,10 +23,12 @@
     <!--===== CONTAINER LOCATION =====-->
     <div class="container">
       <div class="search-box">
-        <box-icon name='search' class="search"></box-icon>
+        <box-icon name='search' class="search"></box-icon>  
       </div>
       
-      <div class="flex-item1"></div>
+      <form id="locationInput">
+        <input type="text" class="flex-item1" placeholder="Search Location...">
+      </form>
         <section class="container__list" id="container-item">
           <span class="container__location">Birmingham<br><br></span>
           <span class="container__location">Manchester<br><br></span>
@@ -42,9 +44,6 @@
             <span class="weather__detail">Wind<br><br></span>
           </section>
         </div>
-
-
-<!--===== Search Box =====-->
 
       </div>
       <script src="https://unpkg.com/boxicons@2.1.2/dist/boxicons.js"></script>
