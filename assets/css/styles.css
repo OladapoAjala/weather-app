@@ -109,24 +109,22 @@ body{
     background: rgba(16, 13, 32, 0.8);
 }
 .flex-item1{
-    background-color: rgb(60, 64, 67);
-    background-repeat: repeat;
-    background-attachment: scroll;
-    background-origin: padding-box;
-    background-clip: border-box;
-    height: 1px;
-    width: 61%;
-    top: 93px;
-    position: absolute;
-    margin-left: 7px;
-    left: 50px;
+    background: none;
+    border: none;
+    border-bottom: 0.1px rgb(90, 89, 89) solid;
+    padding: 0 1rem 0.5 0;
+    width: 60%;
+    color: rgb(147, 148, 150);
+    font-size: 1.1em;
+    margin-top: 67px;
+    margin-left: 57px;
 }
 .container__list{
     position: absolute;
     color: rgb(110, 112, 114);
     left: 57px;
     top: 129px;
-    
+
 }
 .container__location{
     cursor: pointer;
