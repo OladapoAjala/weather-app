@@ -6,8 +6,12 @@
     --big-font-size: 10.5rem;
     --big-font-size: 12.25rem;
     --small-font-size: 4rem;
-    --left1: 380px;
+    --left1: 485px;
     --left2: 90px;
+    --left3:420px;
+    --left4: 420px;
+    --left5: 770px;
+    --left6: 780px;
     --smallest-font-size: 1rem;
     --height: 100vh;
     --width:  35vw;
@@ -30,6 +34,10 @@ body{
     --smallest-font-size: .8rem;
     --left2: 40%;
     --left1: 40%;
+    --left3: 52%;
+    --left4: 41%;
+    --left5: 64%;
+    --left6: 66%;
     --height: 60.7vh;
     --width:  100vw;
     --container-top: 380px;
@@ -38,24 +46,34 @@ body{
     }
     .degree{
         
-        top: 120px;
+        top: 110px;
       
     }
     .state{
       
-        top: 280px;
+        top: 270px;
       
 
     }
     .details{
         
-        top: 340px;
+        top: 330px;
       
     }
     .container{
         position: absolute;
         height: 50vh;
         width: 100vw;
+    }
+    .time{
+        top: 330px;
+        
+    }
+    .icon{
+        top: 260px;
+    }
+    .condition{
+        top: 310px;
     }
 }
 @media screen and (max-width: 550px){
@@ -64,8 +82,12 @@ body{
        --big-font-size: 9.5rem;
        --small-font-size: 3rem;
        --smallest-font-size: .8rem;
-       --left2: 30%;
-       --left1: 30%;
+       --left2: 24%;
+       --left1: 23%;
+       --left3: 52%;
+       --left4: 23%;
+       --left5: 78%;
+       --left6: 8%;
        --height: 60.7vh;
        --width:  100vw;
        --container-top: 380px;
@@ -80,6 +102,15 @@ body{
     }
     .details{
         top: 280px;
+    }
+    .time{
+        top: 280px;
+    }
+    .icon{
+        top: 120px;
+    }
+    .condition{
+        top: 170px;
     }
 .container{
     position: absolute;
@@ -126,10 +157,10 @@ body{
     top: 129px;
 
 }
-.container__location{
+.city{
     cursor: pointer;
 }
-.container__location:hover{
+.city:hover{
     color: rgb(231, 221, 221);
 }
 
@@ -161,8 +192,8 @@ body{
 .state{
     position: absolute;
     color: var(--small-font-color);
-    bottom: 240px;
-    left: var(--left1);
+    bottom: 230px;
+    left: var(--left4);
     font-size: var(--small-font-size);
     margin: 0;
     padding: 0;
@@ -170,8 +201,17 @@ body{
 .details{
     position: absolute;
     color: var(--small-font-color);
-    bottom: 220px;
+    bottom: 210px;
     left: var(--left1);
+    font-size: var(--smallest-font-size);
+    margin: 0;
+    padding: 0;
+}
+.time{
+    position: absolute;
+    color: var(--small-font-color);
+    bottom: 210px;
+    left: var(--left3);
     font-size: var(--smallest-font-size);
     margin: 0;
     padding: 0;
@@ -186,6 +226,8 @@ body{
     width: var(--search-box-width);
     background: rgb(140, 140, 190);
     text-align: center;
+    cursor: pointer;
+
 }
 .search{
     position: absolute;
@@ -193,4 +235,17 @@ body{
     left: 30px;
     text-align: center;
     cursor: pointer;
+}
+.icon{
+    position: absolute;
+    bottom: 217px;
+    height: 80px;
+    left: var(--left5);
+}
+.condition{
+    position: absolute;
+    color: white;
+    bottom: 190px;
+    left: var(--left6);
+    font-size: var(--smallest-font-size)
 }
