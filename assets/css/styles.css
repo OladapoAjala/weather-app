@@ -37,20 +37,13 @@ body{
     --small-font-color: rgb(230, 231, 235);
     }
     .degree{
-        
-        top: 120px;
-      
+        top: 200px;
     }
     .state{
-      
-        top: 280px;
-      
-
+        top: 380px;
     }
-    .details{
-        
-        top: 340px;
-      
+    .details{  
+        top: 440px;
     }
     .container{
         position: absolute;
@@ -108,7 +101,7 @@ body{
     right: 0px;
     background: rgba(16, 13, 32, 0.8);
 }
-.flex-item1{
+#flex-item1{
     background: none;
     border: none;
     border-bottom: 0.1px rgb(90, 89, 89) solid;

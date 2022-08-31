@@ -1,56 +1,55 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css
     ">
-    <link rel="stylesheet" href="assets/css/styles.css">
-    <title>Weather app</title>
+  <link rel="stylesheet" href="assets/css/styles.css">
+  <title>Weather app</title>
+  <script src="https://unpkg.com/boxicons@2.1.2/dist/boxicons.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
 </head>
+
 <body>
-
   <!--===== ICONS =====-->
-    <box-icon name='cloud-lightning' animation='tada' color='#fbf5f5' class="cloud"></box-icon>
+  <h2 class="degree" data-aos="fade-up" data-aos-duration="3000">16°</h2>
+  <h3 class="state" data-aos="fade-right" data-aos-duration="2000">London</h3>
+  <h4 class="details" data-aos="fade-left" data-aos-duration="1500">06.09-Monday 9th sep</h4>
 
-  <h2 class="degree"  data-aos="fade-up"
-  data-aos-duration="3000">16°</h2>
-    <h3 class="state" data-aos="fade-right" data-aos-duration="2000">London</h3>
-    <h4 class="details" data-aos="fade-left" data-aos-duration="1500">06.09-Monday 9th sep</h4>
-    
-<div class="container" data-aos="fade-left" data-aos-duration="1500"></div>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
-   
-   
-    <!--===== CONTAINER LOCATION =====-->
-    <div class="container" data-aos="fade-left" data-aos-duration="1500">
-      <div class="search-box">
-        <box-icon name='search' class="search"></box-icon>  
-      </div>
-      
-      <form id="locationInput">
-        <input type="text" class="flex-item1" placeholder="Search Location...">
-      </form>
-        <section class="container__list" id="container-item">
-          <span class="container__location">Birmingham<br><br></span>
-          <span class="container__location">Manchester<br><br></span>
-          <span class="container__location">New York<br><br></span>
-          <span class="container__location">Califonia<br><br></span>
-        </section>
-        <br><div class="flex-item2">
-          <h4 class="weather">Weather Details</h4>
-       <section class="container__list" id="weather-detail">
-        
-            <span class="weather__detail">Cloudy<br><br></span>
-            <span class="weather__detail">Humidity<br><br></span>
-            <span class="weather__detail">Wind<br><br></span>
-          </section>
-        </div>
-      </div>
 
-      <script src="https://unpkg.com/boxicons@2.1.2/dist/boxicons.js"></script>
-      <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script> 
-      <script src="assets/js/app.js"></script>
-  </body>
-  </html> 
+  <div class="container" data-aos="fade-left" data-aos-duration="1500"></div>
+  <!--===== CONTAINER LOCATION =====-->
+  <div class="container">
+    <div class="search-box">
+      <box-icon name='search' class="search"></box-icon>
+    </div>
+
+    <form class="locationInput">
+      <input type="text" id="flex-item1" placeholder="Search Location...">
+    </form>
+    <section class="container__list" id="container-item">
+      <span class="container__location">Birmingham<br><br></span>
+      <span class="container__location">Manchester<br><br></span>
+      <span class="container__location">New York<br><br></span>
+      <span class="container__location">Califonia<br><br></span>
+    </section>
+    <br>
+    <div class="flex-item2">
+      <h4 class="weather">Weather Details</h4>
+      <section class="container__list" id="weather-detail">
+
+        <span class="weather__detail">Cloudy<br><br></span>
+        <span class="weather__detail">Humidity<br><br></span>
+        <span class="weather__detail">Wind<br><br></span>
+      </section>
+    </div>
+  </div>  
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+  <script src="assets/js/app.js"></script>
+</body>
+
+</html>
