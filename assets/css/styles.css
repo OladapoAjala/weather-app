@@ -1,196 +1,245 @@
-@import url('https://fonts.googleapis.com/css2?family=Lato:ital@0;1&family=Rubik&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital@0;1&family=Rubik&display=swap");
 
-:root{
-    --mb-1: 7.5rem;
-    --body-font: 'Montserrat', sans-serif;
-    --big-font-size: 10.5rem;
-    --big-font-size: 12.25rem;
-    --small-font-size: 4rem;
-    --left1: 380px;
-    --left2: 90px;
-    --smallest-font-size: 1rem;
-    --height: 100vh;
-    --width:  35vw;
-    --container-top: 0px;
-    --search-box-width: 80px;
-    --search-box-height: 93px;
-    --small-font-color: white;
+:root {
+  --mb-1: 7.5rem;
+  --body-font: "Montserrat", sans-serif;
+  --big-font-size: 10.5rem;
+  --big-font-size: 12.25rem;
+  --small-font-size: 4rem;
+  --left1: 485px;
+  --left2: 90px;
+  --left3: 420px;
+  --left4: 420px;
+  --left5: 770px;
+  --left6: 780px;
+  --smallest-font-size: 1rem;
+  --height: 100vh;
+  --width: 35vw;
+  --container-top: 0px;
+  --search-box-width: 80px;
+  --search-box-height: 93px;
+  --small-font-color: white;
 }
-body{
-    background-image: url("/assets/img/1048232144.jpg.0.jpg");
- 
+body {
+  /* background-image: url("/assets/img/1048232144.jpg.0.jpg"); */
+
   background-size: cover;
 }
-@media screen and (max-width: 1100px){
-   
-    :root{
-     display: block;
+@media screen and (max-width: 1100px) {
+  :root {
+    display: block;
     --big-font-size: 9.5rem;
     --small-font-size: 3rem;
-    --smallest-font-size: .8rem;
+    --smallest-font-size: 0.8rem;
     --left2: 40%;
     --left1: 40%;
+    --left3: 52%;
+    --left4: 41%;
+    --left5: 64%;
+    --left6: 66%;
     --height: 60.7vh;
-    --width:  100vw;
+    --width: 100vw;
     --container-top: 380px;
     --search-box-width: 100px;
     --small-font-color: rgb(230, 231, 235);
-    }
-    .degree{
-        
-        top: 120px;
-      
-    }
-    .state{
-      
-        top: 280px;
-      
-
-    }
-    .details{
-        
-        top: 340px;
-      
-    }
-    .container{
-        position: absolute;
-        height: 50vh;
-        width: 100vw;
-    }
+  }
+  body {
+    background-size: cover;
+  }
+  .degree {
+    top: 110px;
+  }
+  .state {
+    top: 270px;
+  }
+  .details {
+    top: 330px;
+  }
+  .container {
+    position: absolute;
+    height: 50vh;
+    width: 100vw;
+  }
+  .time {
+    top: 330px;
+  }
+  .icon {
+    top: 180px;
+  }
+  .condition {
+    top: 230px;
+  }
 }
-@media screen and (max-width: 550px){
-    :root{
-        display: block;
-       --big-font-size: 9.5rem;
-       --small-font-size: 3rem;
-       --smallest-font-size: .8rem;
-       --left2: 30%;
-       --left1: 30%;
-       --height: 60.7vh;
-       --width:  100vw;
-       --container-top: 380px;
-       --search-box-width: 100px;
-       --small-font-color: rgb(230, 231, 235);
-    }
-    .degree{
-        top: 70px;
-    }
-    .state{
-        top: 220px;
-    }
-    .details{
-        top: 280px;
-    }
-.container{
+@media screen and (max-width: 550px) {
+  :root {
+    display: block;
+    --big-font-size: 9.5rem;
+    --small-font-size: 3rem;
+    --smallest-font-size: 0.8rem;
+    --left2: 24%;
+    --left1: 23%;
+    --left3: 52%;
+    --left4: 23%;
+    --left5: 78%;
+    --left6: 81%;
+    --height: 60.7vh;
+    --width: 100vw;
+    --container-top: 380px;
+    --search-box-width: 100px;
+    --small-font-color: rgb(230, 231, 235);
+  }
+  body {
+    background-size: cover;
+  }
+  .degree {
+    top: 70px;
+  }
+  .state {
+    top: 220px;
+  }
+  .details {
+    top: 280px;
+  }
+  .time {
+    top: 280px;
+  }
+  .icon {
+    top: 120px;
+  }
+  .condition {
+    top: 170px;
+  }
+  .container {
     position: absolute;
     height: 60vh;
     width: 100vw;
+  }
 }
+.degree {
+  position: absolute;
+  font-size: var(--big-font-size);
+  font-family: "Rubik", sans-serif;
+  color: var(--small-font-color);
+  left: var(--left2);
+  bottom: 130px;
+  margin: 0;
+  padding: 0;
 }
-.degree{
-    position: absolute;
-    font-size: var(--big-font-size);
-    font-family: 'Rubik', sans-serif;
-    color: var(--small-font-color);
-    left: var(--left2);
-    bottom: 130px;
-    margin: 0;
-    padding: 0;
-    
+.container {
+  position: absolute;
+  border-style: solid;
+  border-width: 0px;
+  height: var(--height);
+  width: var(--width);
+  top: var(--container-top);
+  right: 0px;
+  background: rgba(16, 13, 32, 0.8);
 }
-.container{
-    position: absolute;
-    border-style: solid;
-    border-width: 0px;
-    height: var(--height);
-    width: var(--width);
-    top: var(--container-top);
-    right: 0px;
-    background: rgba(16, 13, 32, 0.8);
+.flex-item1 {
+  background: none;
+  border: none;
+  border-bottom: 0.1px rgb(90, 89, 89) solid;
+  padding: 0 1rem 0.5 0;
+  width: 60%;
+  color: rgb(147, 148, 150);
+  font-size: 1.1em;
+  margin-top: 67px;
+  margin-left: 57px;
 }
-.flex-item1{
-    background: none;
-    border: none;
-    border-bottom: 0.1px rgb(90, 89, 89) solid;
-    padding: 0 1rem 0.5 0;
-    width: 60%;
-    color: rgb(147, 148, 150);
-    font-size: 1.1em;
-    margin-top: 67px;
-    margin-left: 57px;
+.container__list {
+  position: absolute;
+  color: rgb(110, 112, 114);
+  left: 57px;
+  top: 129px;
 }
-.container__list{
-    position: absolute;
-    color: rgb(110, 112, 114);
-    left: 57px;
-    top: 129px;
-
+.city {
+  cursor: pointer;
 }
-.container__location{
-    cursor: pointer;
-}
-.container__location:hover{
-    color: rgb(231, 221, 221);
+.city:hover {
+  color: rgb(231, 221, 221);
 }
 
-.flex-item2{
-    background-color: rgb(60, 64, 67);
-    background-repeat: repeat;
-    background-attachment: scroll;
-    background-origin: padding-box;
-    background-clip: border-box;
-    height: 1px;
-    width: 75%;
-    left: 57px;
-    top: 318px;
-    position: absolute;
-    right: 60px;
+.flex-item2 {
+  background-color: rgb(60, 64, 67);
+  background-repeat: repeat;
+  background-attachment: scroll;
+  background-origin: padding-box;
+  background-clip: border-box;
+  height: 1px;
+  width: 75%;
+  left: 57px;
+  top: 318px;
+  position: absolute;
+  right: 60px;
 }
-.weather{
-    position: absolute;
-    color: rgb(192, 197, 201);
-    top: 15px;
-    left: 1px;
-}
-
-.weather__detail{
-    position: relative;
-    top: -10px;
-    left: -56px;
-}
-.state{
-    position: absolute;
-    color: var(--small-font-color);
-    bottom: 240px;
-    left: var(--left1);
-    font-size: var(--small-font-size);
-    margin: 0;
-    padding: 0;
-}
-.details{
-    position: absolute;
-    color: var(--small-font-color);
-    bottom: 220px;
-    left: var(--left1);
-    font-size: var(--smallest-font-size);
-    margin: 0;
-    padding: 0;
+.weather {
+  position: absolute;
+  color: rgb(192, 197, 201);
+  top: 15px;
+  left: 1px;
 }
 
-.search-box{
-    position: absolute;
-    border-style: solid;
-    right: 0px;
-    border-width: 0px;
-    height: var(--search-box-height);
-    width: var(--search-box-width);
-    background: rgb(140, 140, 190);
-    text-align: center;
+.weather__detail {
+  position: relative;
+  top: -10px;
+  left: -56px;
 }
-.search{
-    position: absolute;
-    top:35px;
-    left: 30px;
-    text-align: center;
-    cursor: pointer;
+.state {
+  position: absolute;
+  color: var(--small-font-color);
+  bottom: 230px;
+  left: var(--left4);
+  font-size: var(--small-font-size);
+  margin: 0;
+  padding: 0;
+}
+.details {
+  position: absolute;
+  color: var(--small-font-color);
+  bottom: 210px;
+  left: var(--left1);
+  font-size: var(--smallest-font-size);
+  margin: 0;
+  padding: 0;
+}
+.time {
+  position: absolute;
+  color: var(--small-font-color);
+  bottom: 210px;
+  left: var(--left3);
+  font-size: var(--smallest-font-size);
+  margin: 0;
+  padding: 0;
+}
+
+.search-box {
+  position: absolute;
+  border-style: solid;
+  right: 0px;
+  border-width: 0px;
+  height: var(--search-box-height);
+  width: var(--search-box-width);
+  background: rgb(140, 140, 190);
+  text-align: center;
+  cursor: pointer;
+}
+.search {
+  position: absolute;
+  top: 35px;
+  left: 30px;
+  text-align: center;
+  cursor: pointer;
+}
+.icon {
+  position: absolute;
+  bottom: 217px;
+  height: 80px;
+  left: var(--left5);
+}
+.condition {
+  position: absolute;
+  color: white;
+  bottom: 190px;
+  left: var(--left6);
+  font-size: var(--smallest-font-size);
 }
