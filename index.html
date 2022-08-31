@@ -34,31 +34,32 @@
 
 
     <!--===== CONTAINER LOCATION =====-->
-    <div class="container" data-aos="fade-left" data-aos-duration="1500">
-      <div class="search-box" onclick="fetch()">
-        <box-icon name='search' class="search"></box-icon>
-      </div>
 
-      <form id="locationInput">
+
+    <form id="locationInput">
+      <div class="container" data-aos="fade-left" data-aos-duration="1500">
+        <button type="submit" class="search-box">
+          <box-icon name='search' class="search"></box-icon>
+        </button>
         <input type="text" class="flex-item1" placeholder="Search Location...">
-      </form>
-      <section class="container__list" id="container-item">
-        <span class="city" onclick="London()">London<br><br></span>
-        <span class="city" onclick="Manchester()">Manchester<br><br></span>
-        <span class="city" onclick="New_york()">New York<br><br></span>
-        <span class="city" onclick="California()">California<br><br></span>
-      </section>
-      <br>
-      <div class="flex-item2">
-        <h4 class="weather">Weather Details</h4>
-        <section class="container__list" id="weather-detail">
+    </form>
+    <section class="container__list" id="container-item">
+      <span class="city London">London<br><br></span>
+      <span class="city Manchester">Manchester<br><br></span>
+      <span class="city New_york">New York<br><br></span>
+      <span class="city California">California<br><br></span>
+    </section>
+    <br>
+    <div class="flex-item2">
+      <h4 class="weather">Weather Details</h4>
+      <section class="container__list" id="weather-detail">
 
-          <span class="weather__detail">Cloudy:<span class="cloud"></span><br><br></span>
-          <span class="weather__detail">Humidity:<span class="humidity"></span><br><br></span>
-          <span class="weather__detail">Wind:<span class="wind"></span><br><br></span>
-        </section>
-      </div>
+        <span class="weather__detail">Cloudy:<span class="cloud"></span><br><br></span>
+        <span class="weather__detail">Humidity:<span class="humidity"></span><br><br></span>
+        <span class="weather__detail">Wind:<span class="wind"></span><br><br></span>
+      </section>
     </div>
+  </div>
 
   </div>
 
